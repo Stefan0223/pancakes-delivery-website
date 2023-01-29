@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clătite calde chiar la tine în oraș, gătite după o rețetă proprie. Le umplem cu Nutella, dulceață, brânză dulce sau sărată, Kinder Bueno și alte bunătăți la alegere."
+    />
+    <meta property="og:title" content="Clătităria La DANTE din Vatra Dornei" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://clatitarialadante.ro/images/ogimage.webp"
+    />
+    <title>Clătităria La DANTE | Clătite calde în Vatra Dornei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- BODY BEGINNING -->
+
+    <!-- NAVBAR START -->
+    <header class="header">
+      <nav class="navbar" id="nav">
+        <a href="#home" class="navbar__title"
+          ><i class="fas fa-utensils utensils"></i>Clătităria La DANTE</a
+        >
+        <div class="navbar__icons">
+          <a href="#" id="cart-link"
+            ><i class="fas fa-shopping-cart" id="cart">
+              <span class="cart-pop"></span></i
+          ></a>
+          <div class="menu-button fas fa-bars" id="menu-btn"></div>
+        </div>
+        <ul class="navbar__list">
+          <li><a href="#home" class="menu-item">Acasă</a></li>
+          <li><a href="#about" class="menu-item">Despre noi</a></li>
+          <li><a href="#menu-section" class="menu-item">Meniu</a></li>
+          <li><a href="#footer" class="menu-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- PREVIEW CART START -->
+    <section class="cart-container">
+      <i class="fas fa-times" id="cart-close"></i>
+      <p class="cart-title">Coșul tău</p>
+      <div class="cart-content">
+        <div class="empty__cart">
+          <p>Nu aveți produse în coș.</p>
+        </div>
+      </div>
+      <div class="cart-total">
+        <div class="comanda-minima">*comanda minimă este de 3 clătite</div>
+        <div class="comanda-maxima">*comanda maximă este de 40 clătite</div>
+        <div class="cart__total">Total</div>
+        <div class="cart__price">0 Lei</div>
+      </div>
+      <button type="button" class="btn--larger cart-btn" id="cart__btn">
+        Cumpără
+      </button>
+    </section>
+    <!-- PREVIEW CART END -->
+
+    <!-- HOME START -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slides slide1">
+            <div class="slide-content">
+              <span>clătite delicioase</span>
+              <h1>gătite cu dragoste</h1>
+              <a href="#menu-section"><button class="btn">Comandă</button></a>
+            </div>
+          </div>
+          <div class="swiper-slide slides slide2">
+            <div class="slide-content">
+              <span>clătite delicioase</span>
+              <h1>răsfăț</h1>
+              <a href="#menu-section"><button class="btn">Comandă</button></a>
+            </div>
+          </div>
+          <div class="swiper-slide slides slide3">
+            <div class="slide-content">
+              <span>clătite delicioase</span>
+              <h1>rețetă autentică</h1>
+              <a href="#menu-section"><button class="btn">Comandă</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next" id="swiper-buttons"></div>
+        <div class="swiper-button-prev" id="swiper-buttons"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- HOME END -->
+
+    <!-- ABOUT START -->
+    <section id="about">
+      <div class="about__container">
+        <div class="about__image">
+          <div class="image__hero" data-aos="zoom-in-up">
+            <img
+              src="/images/pancake_PNG116.webp"
+              class="image__element"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="about__description" data-aos="zoom-in-up">
+          <h2>Bine ai venit!</h2>
+          <p>
+            Din dragoste pentru clătite și pentru bucătărie în general, am
+            înființat Clătităria La DANTE. Un mic colțișor dulce de rai situat
+            în <span class="pink">Parcul Central din Vatra Dornei</span>, unde
+            poți servi pe tihnă o porție de clătite delicioase, gătite de
+            bucătari iscusiți după o rețetă proprie.<br />
+            De asemenea servim și răcoritoare, fresh-uri de fructe, cafea, apă,
+            ceai și băuturi alcoolice pentru majori. Pentru că vrem să ne
+            asigurăm că produsele noastre ajung la tot poporul din Țara
+            Dornelor, și nu numai, acum livrăm și la domiciliu. Alege produsele
+            dorite de pe site-ul nostru, dă o comandă iar noi ți le vom livra
+            cât de repede se poate. Vă invităm la o porție de dulce! Nu vrei să
+            comanzi de pe site? Atunci dă o comandă telefonică:
+            <span class="pink">0740838558.</span>
+          </p>
+          <div class="about__button">
+            <a href="https://www.facebook.com/clatitarialadante" target="_blank"
+              ><button class="btn--larger" data-aos="zoom-in-down">
+                Pagina de Facebook
+              </button></a
+            >
+          </div>
+          <div class="about__mini-pictures" data-aos="zoom-in-up">
+            <div class="mini-1">
+              <img src="images/about-icon-1.png" alt="" />
+              <p id="mini-text">Clătite delicioase</p>
+            </div>
+            <div class="mini-2">
+              <img src="images/about-icon-2.png" alt="" />
+              <p id="mini-text">Arome deosebite</p>
+            </div>
+            <div class="mini-3">
+              <img src="images/about-icon-3.png" alt="" />
+              <p id="mini-text">Clătitari de excepție</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- MENU START -->
+    <div class="menu__title" id="menu-section" data-aos="zoom-in-down">
+      <p>Meniu</p>
+      <h3>Clătite dulci și sărate</h3>
+    </div>
+    <section class="menu" id="menu" data-aos="zoom-in-up">
+      <div class="card__container" id="card__container" data-name="item-1">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu Nutella</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella
+            </p>
+          </div>
+          <div class="card__price">
+            <p>13 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-1.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-2">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu Nutella și biscuiți Oreo</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+              biscuiți Oreo
+            </p>
+          </div>
+          <div class="card__price">
+            <p>15 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images//menu-item-2.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-3">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu Nutella și banane</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+              banane
+            </p>
+          </div>
+          <div class="card__price">
+            <p>15 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-4.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-4">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu Nutella și Kinder Bueno</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+              Kinder Bueno
+            </p>
+          </div>
+          <div class="card__price">
+            <p>17 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-3.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-5">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu Nutella și frișcă</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+              frișcă
+            </p>
+          </div>
+          <div class="card__price">
+            <p>15 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-5.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-6">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătita "casei" cu brânză dulce și stafide</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, brânză de
+              vaci, zahăr, stafide
+            </p>
+          </div>
+          <div class="card__price">
+            <p>15 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-6.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-7">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu brânză sărată</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, brânză
+              sărată
+            </p>
+          </div>
+          <div class="card__price">
+            <p>15 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-7.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-8">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu dulceață de căpșuni</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, dulceață
+              de căpșuni
+            </p>
+          </div>
+          <div class="card__price">
+            <p>13 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-8.webp" alt="" />
+        </div>
+      </div>
+      <div class="card__container" data-name="item-9">
+        <div class="card__text">
+          <div class="card__title">
+            <h3>Clătită cu dulceață de afine</h3>
+          </div>
+          <div class="card__description">
+            <p>
+              <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, dulceață
+              de afine
+            </p>
+          </div>
+          <div class="card__price">
+            <p>13 Lei</p>
+          </div>
+        </div>
+        <div class="card__image">
+          <img src="images/menu-item-8.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- MENU END -->
+
+    <!-- PREVIEW MENU ITEM START -->
+    <section class="preview-container" id="preview-container">
+      <div class="preview-item" data-target="item-1" id="preview-item">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-1.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu Nutella</h3>
+        <p class="preview-item__price">13 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d1">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q1"
+            />
+            <button id="increment" class="counter__button i1">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-2">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-2.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu Nutella și biscuiți Oreo</h3>
+        <p class="preview-item__price">15 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+          biscuiți Oreo
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d2">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q2"
+            />
+            <button id="increment" class="counter__button i2">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-3">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-4.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu Nutella și banane</h3>
+        <p class="preview-item__price">15 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+          banane
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d3">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q3"
+            />
+            <button id="increment" class="counter__button i3">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-4">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-3.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu Nutella și Kinder Bueno</h3>
+        <p class="preview-item__price">17 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+          Kinder Bueno
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d4">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q4"
+            />
+            <button id="increment" class="counter__button i4">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-5">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-5.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu Nutella și frișcă</h3>
+        <p class="preview-item__price">15 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, Nutella,
+          frișcă
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d5">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q5"
+            />
+            <button id="increment" class="counter__button i5">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-6">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-6.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătita "casei" cu brânză dulce și stafide</h3>
+        <p class="preview-item__price">15 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, brânză de
+          vaci, zahăr, stafide
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d6">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q6"
+            />
+            <button id="increment" class="counter__button i6">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-7">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-7.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu brânză sărată</h3>
+        <p class="preview-item__price">15 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, brânză sărată
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d7">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q7"
+            />
+            <button id="increment" class="counter__button i7">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-8">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-8.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu dulceață de căpșuni</h3>
+        <p class="preview-item__price">13 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, dulceață de
+          căpșuni
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d8">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q8"
+            />
+            <button id="increment" class="counter__button i8">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+      <div class="preview-item" data-target="item-9">
+        <i class="fas fa-times" id="close-preview"></i>
+        <img src="images/menu-item-8.webp" class="preview-item__image" alt="" />
+        <h3 class="item__title">Clătită cu dulceață de afine</h3>
+        <p class="preview-item__price">13 Lei</p>
+        <p class="preview-item__description">
+          <b class="pink">Ingrediente:</b> făină, lapte, ouă, unt, dulceață de
+          afine
+        </p>
+        <div class="counter-container">
+          <div class="counter-container" id="allBtns">
+            <button id="decrement" class="counter__button d9">-</button>
+            <input
+              type="number"
+              value="1"
+              min="1"
+              max="40"
+              class="preview-item__quantity q9"
+            />
+            <button id="increment" class="counter__button i9">+</button>
+          </div>
+          <p class="closed-mesage">Program livrări 10:00 - 17:00</p>
+        </div>
+        <button class="preview-container__btn">Adaugă în coș</button>
+      </div>
+    </section>
+    <!-- PREVIEW MENU ITEM END -->
+
+    <!-- CHECKOUT PAGE START -->
+    <section class="checkout-page-container">
+      <div class="checkout-page">
+        <div class="checkout-page__sumar-title">
+          <p class="sumar-title">Sumar comandă</p>
+          <i class="fas fa-times" id="close-checkout-page"></i>
+        </div>
+        <div class="checkout-page__sumar-table"></div>
+        <div class="checkout-page__detalii-livrare-title">
+          <p>Detalii livrare comandă</p>
+        </div>
+        <div class="checkout-page__detalii-livrare-input">
+          <form action="">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://clatitarialadante.ro/thanks.html"
+            />
+            <div class="produse">
+              <input
+                type="text"
+                name="Produse"
+                class="hidden__input hidden__produse"
+              />
+              <input
+                type="text"
+                name="Total"
+                class="hidden__input hidden__total"
+              />
+            </div>
+            <div class="nume-prenume">
+              <label for="Nume" class="detalii-livrare-input__labels"
+                ><em>Nume și prenume</em></label
+              >
+              <input
+                type="text"
+                name="Nume"
+                minlength="3"
+                maxlength="50"
+                class="detalii-livrare-input__fields"
+                required
+              />
+            </div>
+            <div class="adresa">
+              <label for="Adresa" class="detalii-livrare-input__labels"
+                ><em>Adresă</em></label
+              >
+              <input
+                type="text"
+                name="Adresa"
+                minlength="3"
+                maxlength="50"
+                placeholder="Exemplu: mun. ..., str. ..., nr. ..., bl. ..., sc. ..., et. ..., ap. ..."
+                class="detalii-livrare-input__fields"
+                required
+              />
+            </div>
+            <div class="telefon">
+              <label for="Telefon" class="detalii-livrare-input__labels"
+                ><em>Telefon</em></label
+              >
+              <input
+                type="tel"
+                name="Telefon"
+                minlength="10"
+                maxlength="10"
+                class="detalii-livrare-input__fields"
+                required
+              />
+            </div>
+            <div class="observatii">
+              <label for="observatii" class="detalii-livrare-input__labels"
+                ><em>Observații</em> (opțional)</label
+              >
+              <input
+                type="text"
+                name="observatii"
+                maxlength="150"
+                class="detalii-livrare-input__observatii"
+              />
+            </div>
+            <div class="gdpr">
+              <input
+                type="checkbox"
+                name="GDPR"
+                id="gdpr"
+                class="gdpr__checkbox"
+                required
+              />
+              <label for="GDPR" class="gdpr-label-text"
+                >Sunt de acord cu colectarea și procesarea datelor mele
+                personale pentru informări telefonice cu privire la comandă și
+                livrare.</label
+              >
+            </div>
+            <div class="order-submit">
+              <button type="submit" class="order-submit-btn">
+                Trimite comanda
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="info">
+          <p class="info-text">
+            * Unul dintre operatorii noștri vă va contacta telefonic pentru
+            confirmarea comenzii. Dacă NU sunteți contactat înseamnă că ceva nu
+            a funcționat corespunzător și comanda nu a fost înregistrată!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- CHECKOUT PAGE END -->
+
+    <!-- FOOTER START -->
+    <section id="footer">
+      <footer>
+        <div class="details" data-aos="zoom-in-up">
+          <div class="program detail-icons">
+            <i class="fas fa-clock" id="icons"></i>
+            <p class="details-name">Program</p>
+            <span class="details-info pink">10:00 - 18:00</span>
+          </div>
+          <div class="phone detail-icons">
+            <i class="fas fa-phone" id="icons"></i>
+            <p class="details-name">Telefon</p>
+            <span class="details-info pink">0742687549</span>
+          </div>
+          <div class="email detail-icons">
+            <i class="fas fa-envelope" id="icons"></i>
+            <p class="details-name">E-mail</p>
+            <span class="details-info pink">clatitarialadante@gmail.com</span>
+          </div>
+          <div class="address detail-icons">
+            <i class="fas fa-map" id="icons"></i>
+            <p class="details-name">Adresă</p>
+            <span class="details-info pink"
+              >Vatra Dornei,<br />str. Oborului, nr. 7</span
+            >
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/clatitarialadante" target="_blank"
+            ><i class="fa-brands fa-facebook-square squares"></i
+          ></a>
+          <a href="https://www.instagram.com/clatitarialadante/" target="_blank"
+            ><i class="fab fa-instagram squares"></i
+          ></a>
+        </div>
+        <div class="credit">
+          <p>
+            Website realizat de <span>Dante Media&#174;</span> | Toate
+            drepturile rezervate&#169; <span class="pink">2023</span>
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- FOOTER END -->
+
+    <!-- BODY END -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2eb959459f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
